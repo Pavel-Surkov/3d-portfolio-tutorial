@@ -9,8 +9,11 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
+      {/* hemisphereLight - A light source positioned directly above the scene, with color fading from the sky color to the ground color. */}
       <hemisphereLight intensity={0.15} groundColor="black" />
+      {/* pointlight - A light that gets emitted from a single point in all directions. */}
       <pointLight intensity={1} />
+      {/* spotlight - This light gets emitted from a single point in one direction, along a cone that increases in size the further from the light it gets. */}
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
